@@ -23,7 +23,7 @@ def api_articles():
 @app.route('/articles/<float:article_id>')
 @app.route('/articles/<path:article_id>')
 def api_article(article_id):
-    return 'You are reading ' + article_id
+    return f'You are reading {article_id}'
 
 
 # GET Parameters
